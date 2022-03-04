@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 100px;
+    background: rgb(95, 95, 214, .5);
+}
+
+body {
+    background-image: url(img/3766778.webp);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+main {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+}
+
+.keys  {
+    position: relative;
+    width: 50%;
+}
+
+.key {
+   border-right: 0;
+   text-align: bottom;
+   text-align: center;
+   transition: all .07s ease;
+    /* border-top: black solid 10px; */
+}
+
+.key--white {
+    width: 12.5%;
+    height: 500px;
+    background: antiquewhite;
+    padding: 0;
+    border-left: .5;
+}
+   
+
+
+.key--black {
+    background: black;
+    height: 250px;
+    z-index: 10;
+    position: absolute;
+    width: 8%;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(105, 52, 52, .5);
+    border-radius: 25%;
+  }
+
+.note {
+    align-self: center;
+    width: 20%;
+    overflow: hidden;
+    
+}
+.note-container {
+    font-size: 100px;
+    background: none;
+    overflow: hidden;
+    /* border: black 3px solid; */
+    /* height: 200px; */
+    text-transform: uppercase;
+}
+
+
+.note-output {
+    font-size: 100px;
+}
+
+input, input:focus{
+    outline: none;
+    border: none;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.note__accidental {
+    padding: 1rem;
+    /* margin: 3rem; */
+    font-size: 30px;
+    background: none;
+    border: none;
+    border-radius: 100%;
+}
+
+.note__accidental:hover {
+    background: rgb(156, 156, 196);
+}
+
+.note-output {
+    font-style: italic;
+    font-weight: 800;
+    
+}
+
+
+
+.material-icons {
+    font-size: 20px;
+   
+}
+
+
+
+#pause {
+    background-color: blue;
+    border-radius:100px;
+    color: black;
+}
+
+#record{
+    background-color: red;
+    border-radius:100px;
+    
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes pulse{
+	0%{
+		box-shadow: 0px 0px 5px 0px rgba(173,0,0,.3);
+	}
+	65%{
+		box-shadow: 0px 0px 5px 13px rgba(173,0,0,.3);
+	}
+	90%{
+		box-shadow: 0px 0px 5px 13px rgba(173,0,0,0);
+	}
+}

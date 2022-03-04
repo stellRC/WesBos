@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <header>
+        <h1>Note Generator</h1>
+        <a href="dark.html">🌙</a>
+        <div class="recording">
+            <div class="form-group">
+                <div id="audioMediaNotAvailable" style="display: none;">
+                   Microphone not found
+                </div>
+                <div id="recording">
+                   <button class="rec" type="button" id="record" disabled>
+                      <i class="material-icons">Record </i>
+                   </button>
+                   <button class="rec" type="button" id="pause">
+                      <i class="material-icons">‖ </i>
+                   </button>
+                   <button class="rec" type="button" id="resume">
+                      <i class="material-icons">Resume</i>
+                   </button>
+                   <button class="rec" type="button" id="stop">
+                      <i class="material-icons">stop</i>
+                   </button>
+                </div>
+                <div id="processing">
+                   <div>
+                     <audio id="audio" controls>
+                   </div>
+                </div>
+             </div>
+        </div>
+    </header>
+    <main>
+        <section class="keys">
+            <button data-key="KeyA" class="key key--white"></button>
+            <button data-key="KeyW" class="key key--black"></button>
+            <button data-key="KeyS" class="key key--white"></button>
+            <button data-key="KeyE" class="key key--black"></button>
+            <button data-key="KeyD" class="key key--white"></button>
+            <button data-key="KeyF" class="key key--white"></button>
+            <button data-key="KeyT" class="key key--black"></button>
+            <button data-key="KeyG" class="key key--white"></button>
+            <button data-key="KeyY" class="key key--black"></button>
+            <button data-key="KeyH" class="key key--white"></button>
+            <button data-key="KeyU" class="key key--black"></button>
+            <button data-key="KeyJ" class="key key--white"></button>
+            
+        </section>
+        
+        <section class="note">
+            <div class="note-output"></div>
+        </section>
+        <section class="drums">
+            <audio data-key="KeyZ" src="drums/boom.wav"></audio>
+            <audio data-key="KeyX" src="drums/clap.wav"></audio>
+            <audio data-key="KeyC" src="drums/hihat.wav"></audio>
+            <audio data-key="KeyV" src="drums/kick.wav"></audio>
+            <audio data-key="KeyB" src="drums/openhat.wav"></audio>
+            <audio data-key="KeyN" src="drums/ride.wav"></audio>
+            <audio data-key="KeyM" src="drums/snare.wav"></audio>
+            <audio data-key="Comma" src="drums/tink.wav"></audio>
+            <audio data-key="Period" src="drums/tom.wav"></audio>
+        </section>
+        <section class="piano">
+            <audio data-key="KeyA" src="sounds/piano__C.mp3"></audio>
+            <audio data-key="KeyW" src="sounds/piano__C--sharp.mp3"></audio>
+            <audio data-key="KeyS" src="sounds/Piano__D.mp3"></audio>
+            <audio data-key="KeyE" src="sounds/Piano__D--sharp.mp3"></audio>
+            <audio data-key="KeyD" src="sounds/piano__E.mp3"></audio>
+            <audio data-key="KeyF" src="sounds/Piano__F.mp3"></audio>
+            <audio data-key="KeyT" src="sounds/Piano__F--sharp.mp3"></audio>
+            <audio data-key="KeyG" src="sounds/Piano__G.mp3"></audio>
+            <audio data-key="KeyY" src="sounds/Piano__G--sharp.mp3"></audio>
+            <audio data-key="KeyH" src="sounds/Piano__A.mp3"></audio>
+            <audio data-key="KeyU" src="sounds/Piano__A--sharp.mp3"></audio>
+            <audio data-key="KeyJ" src="sounds/Piano__B.mp3"></audio>
+        </section>
+    </main>
+</body>
+</html>
+
