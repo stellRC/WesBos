@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="clocks">
+        <div class="us-clock__block">
+            <h1>Local</h1>
+            <section class="local-clock">
+                <div class="clock-face">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand min-hand"></div>
+                    <div class="hand second-hand"></div>
+                    <div class="number number--local">
+                        <span class="num12">12</span>
+                        <span class="num1">1</span>
+                        <span class="num2">2</span>
+                        <span class="num3">3</span>
+                        <span class="num4">4</span>
+                        <span class="num5">5</span>
+                        <span class="num6">6</span>
+                        <span class="num7">7</span>
+                        <span class="num8">8</span>
+                        <span class="num9">9</span>
+                        <span class="num10">10</span>
+                        <span class="num11">11</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="utc-clock__block">
+            <h1>UTC</h1>
+            <section class="utc-clock">
+                <div class="clock-face">
+                    <div class="hand__utc hour-hand--utc"></div>
+                    <div class="hand__utc min-hand--utc"></div>
+                    <div class="hand__utc second-hand--utc"></div>
+                    <div class="number number--utc">
+                        <span class="num12">12</span>
+                        <span class="num1">1</span>
+                        <span class="num2">2</span>
+                        <span class="num3">3</span>
+                        <span class="num4">4</span>
+                        <span class="num5">5</span>
+                        <span class="num6">6</span>
+                        <span class="num7">7</span>
+                        <span class="num8">8</span>
+                        <span class="num9">9</span>
+                        <span class="num10">10</span>
+                        <span class="num11">11</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="select-clock__block">
+            <button class="btn" id="btn--tokyo">Tokyo</button>
+            <button class="btn" id="btn--france">Paris</button>
+            <button class="btn" id="btn--ecuador">Cuenca</button>
+            <section class="select-clock">
+                <div class="clock-face">
+                    <div class="hand__select hour-hand--select"></div>
+                    <div class="hand__select min-hand--select"></div>
+                    <div class="hand__select second-hand--select"></div>
+                    <div class="number number--select">
+                        <span class="num12">12</span>
+                        <span class="num1">1</span>
+                        <span class="num2">2</span>
+                        <span class="num3">3</span>
+                        <span class="num4">4</span>
+                        <span class="num5">5</span>
+                        <span class="num6">6</span>
+                        <span class="num7">7</span>
+                        <span class="num8">8</span>
+                        <span class="num9">9</span>
+                        <span class="num10">10</span>
+                        <span class="num11">11</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
