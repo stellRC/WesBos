@@ -1,0 +1,118 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+    --opacity: 10px;
+    --border-radius: 0;
+}
+
+
+
+image {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    background: #193549;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Hubballi', cursive;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding-top: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: baseline;
+}
+
+h2 {
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.h1 {
+      background: var(--base);
+}
+
+nav {
+    background-color: black;
+    color: green;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+   display: flex;
+}
+
+
+nav ul li a {
+    color: green;
+    margin: 0 1em;
+    text-decoration: none; 
+    display: block;
+}
+
+.scrolling-box {
+    display: block;
+    height: 500px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: auto;
+}
+
+.scrolling--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.controls {
+    margin: 30px 0;
+}
+
+input {
+    width: 100px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    opacity: var(--opacity);
+    border-radius: var(--border-radius);
+    height: 100%;
+    box-shadow: inset;
+    overflow: hidden;
+}
+
+.hl {
+    color: var(--base);
+}
+
+@media (min-height: 300px) {
+    nav {
+        position: sticky;
+        top: 0;
+    }
+}
+
+/* for sticky to work, must be in a taller parent element */

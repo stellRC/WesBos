@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Behavior</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+        <nav>
+            <ul>
+                <li><a href="#1">Forest One</a></li>
+                <li><a href="#2">Forest Two</a></li>
+                <li><a href="#3">Forest Three</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="controls">
+        <label for="spacing">Spacing:</label>
+        <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    
+        <label for="blur">Blur:</label>
+        <input id="blur" type="range" name="blur" min="0" max="25" step="1" value="10" data-sizing="px">
+
+        <label for="opacity">Opacity:</label>
+        <input id="opacity" type="range" name="opacity" min="0" max="1" value="1" step=".1">
+
+        <label for="border-radius">Radius:</label>
+        <input id="border-radius" type="range" name="border-radius" min="0" max="100px" value="0" step="1" data-sizing="px">
+    
+        <label for="base"></label>
+        <input id="base" type="color" name="base" value="#ffc600">
+      </div>
+    <section class="scrolling-box">
+        <img class="scrolling--img" id="1" src="img/forest-1.jpg" alt="Forest One">
+        <img class="scrolling--img" id="2" src="img/forest-2.jpg" alt="Forest Two">
+        <img class="scroling--img forest-3" id="3" src="img/forest-4.jpg" alt="Forest Three">
+    </section>
+</body>
+</html>
