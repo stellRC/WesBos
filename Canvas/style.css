@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    font-family: 'Palette Mosaic', cursive;
+  }
+
+  ul, li {
+      margin: 0;
+      padding: 0;
+  }
+
+  li {
+      list-style-type: none;
+      cursor: pointer;
+  }
+
+  a {
+      text-decoration: none;
+      font-size: 20px;
+      color: brown;
+
+  }
+
+  li:hover {
+      transform: scale(1.1);
+  }
+
+  a:hover {
+     
+      transform: scale(1.1);
+      transition: all .5s ease-in-out;
+  }
+
+  header {
+      width: 100%;
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+
+  }
+  h1 {
+      position: absolute;
+      text-align: center;
+     
+      z-index: 100;
+      color: brown;
+      font-size: 40px;
+  }
+.style, .brush {
+    position: absolute;
+    background-color:antiquewhite;
+    color: brown;
+    box-shadow: -1px -1px 20px 0px; 
+    display: inline-block;
+    width: 250px;
+    height: 150px;  
+    transform-origin: 50% 50%;
+    transition: .15s ease-out;
+    z-index: 30;
+    outline: none;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#style__top-left {
+    top: 0;
+    left: 0;
+    border-radius: 0 0 100% 0;
+    
+}
+
+#style__bottom-left {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 0;
+}
+
+#style__top-right {
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 100%;
+}
+
+#style__bottom-right {
+    bottom: 0;
+    right: 0;
+    border-radius: 100% 0 0 0;
+}
+
+.style__one--link,
+.style__four--link {
+    transform: rotate(-45deg);
+}
+
+.style__two--link,
+.style__three--link {
+    transform: rotate(45deg);
+}
+
+/* .brush--list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 1rem;
+} */
+#brush--id {
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 0;
+    border-radius: 100% 100% 0 0;
+    height: 80px;
+  
+}
+.brush a {    
+    z-index: 100;
+    font-size: 60px;
+}
+
+.brush:hover {
+    transform: scale(1.1);
+}
+
+.brush a:hover {
+    transform: rotate(-90deg);
+}
+
